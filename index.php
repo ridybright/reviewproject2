@@ -16,10 +16,10 @@
             <div class="col-md-8 style_div">
                 <form action="">
                     <div class="col-md-5 form-group style_form">
-                        <input type="text" class="form-control" placeholder="Enter Name...">
+                        <input type="text" class="form-control" id="uname" placeholder="Enter Name...">
                     </div>
                     <div class="col-md-5 form-group style_form ">
-                        <input type="email" class="form-control" placeholder="Enter Email...">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email...">
                     </div>
                     <div class="col-md-2 form-group style_form">
                         <button type="button" class="form-control btn btn-primary"><i class="fas fa-paper-plane"></i> Send</button>
