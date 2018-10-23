@@ -25,11 +25,6 @@ p#error_name, p#error_email {
     padding-left: 5px;
     border-radius: 3px;
 } 
-.checkicon_email{
-    position: relative;
-    margin-left: 255px;
-    cursor: pointer;
-}
 
 #valid_uname{
     position: relative;
@@ -44,10 +39,9 @@ p#error_name, p#error_email {
     bottom: 28px;
     cursor: pointer;
 }
-
 #valid_email{
     position: relative;
-    
+    left: 250px;
     bottom: 28px;
     cursor: pointer;
 }

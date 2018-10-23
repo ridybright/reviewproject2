@@ -17,18 +17,18 @@
                 <form action="">
                     <div class="col-md-5 form-group style_form">
                         <input type="text" class="form-control" id="uname" placeholder="Enter Name...">
-                        <i id="valid_uname" class="fa fa-check text-green hide checkicon_uname"></i>
-                        <i id="invalid_uname" class="fa fa-warning text-red hide warningicon_uname"></i>
+                        <i id="valid_uname" class="fa fa-check text-green hide"></i>
+                        <i id="invalid_uname" class="fa fa-warning text-red hide"></i>
                         <p id="error_name" class="text-danger bg-danger hide">Name must be more than 3 characters.</p>
                     </div>
                     <div class="col-md-5 form-group style_form ">
                         <input type="email" class="form-control" id="email" placeholder="Enter Email...">
-                        <i id="valid_email" class="fa fa-check text-green hide checkicon_email"></i>
-                        <i id="invalid_email" class="fa fa-warning text-red hide warningicon_email"></i>
+                        <i id="valid_email" class="fa fa-check text-green hide"></i>
+                        <i id="invalid_email" class="fa fa-warning text-red hide"></i>
                         <p id="error_email" class="text-danger bg-danger hide">Please, provide a valid email.</p>
                     </div>
                     <div class="col-md-2 form-group style_form">
-                        <button type="button" id="#send" class="form-control btn btn-primary" disabled><i class="fa fa-paper-plane"></i> Send</button>
+                        <button type="button" id="send" class="form-control btn btn-primary" disabled><i class="fa fa-paper-plane"></i> Send</button>
                     </div>    
                 </form>
             </div>
