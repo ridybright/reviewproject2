@@ -6,12 +6,22 @@ $("#email").on('input', function(){
   let emailValue = $("#email").val();
   if(emailRegex.test(emailValue)){
        $("#email").css("color","green");
+       $("#validator").removeClass("hide");
+       $("#valid_email").removeClass("hide");
+       $("#error_email").addClass("hide");
+       $("#invalid_email").addClass("hide");
+       enableSendBtn();
     }
-    else if(!emailRegex.test(emailValue) && $(this).val()!=""){
+    else if(!emailRegex.test(emailValue) && $(this).val() != ""){
        $("#email").css("color","red");
+       $("#error_email").removeClass("hide");
+       $("#invalid_email").removeClass("hide");
+       $("#valid_email").addClass("hide");
     }
     else { 
       $("#email").css("color","#555");
+      $("#error_email").addClass("hide");
+      $("#valid_email, #invalid_email").addClass("hide");
     }
 });
 
@@ -19,8 +29,27 @@ $("#uname").on('input', function(){
     let unameValue = $("#uname").val();
     if(unameValue.length > 3){
          $("#uname").css("color","green");
+         $("#validator").removeClass("hide");
+         $("#valid_uname").removeClass("hide");
+         $("#error_name").addClass("hide");
+         $("#invalid_uname").addClass("hide");
+         enableSendBtn()
       }
-      else if(unameValue.length < 3 || unameValue.length == 3){
+      else if(unameValue.length <= 3 && unameValue != ""){
          $("#uname").css("color","red");
+         $("#error_name").removeClass("hide");
+         $("#invalid_uname").removeClass("hide");
+         $("#valid_uname").addClass("hide");
+      }
+      else { 
+        $("#uname").css("color","#555");
+        $("#error_name").addClass("hide");
+        $("#valid_uname, #invalid_uname").addClass("hide");
       }
   });
+
+  function enableSendBtn() {
+    if (emailRegex.test($('#email').val()) && $('#uname').val().length > 3) {
+      $('#send').prop('disabled', false);
+    }
+  }

@@ -11,3 +11,54 @@ body{
     border: 1px solid #dce2e5;
     border-radius: 5px;
 }
+
+.text-green {
+    color: green !important;
+}
+
+.text-red {
+    color: red !important;
+}
+
+p#error_name, p#error_email {
+    margin-top: 3px;
+    padding-left: 5px;
+    border-radius: 3px;
+} 
+.checkicon_email{
+    position: relative;
+    margin-left: 255px;
+    cursor: pointer;
+}
+
+#valid_uname{
+    position: relative;
+    left: 250px;
+    bottom: 28px;
+    cursor: pointer;
+}
+
+#invalid_uname{
+    position: relative;
+    left: 250px;
+    bottom: 28px;
+    cursor: pointer;
+}
+
+#valid_email{
+    position: relative;
+    
+    bottom: 28px;
+    cursor: pointer;
+}
+#invalid_email{
+    position: relative;
+    left: 250px;
+    bottom: 28px;
+    cursor: pointer;
+}
+.btn-primary[disabled] {
+    color:#fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
